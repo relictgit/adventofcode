@@ -35,7 +35,7 @@ int count_input_file_increments::get_count_input_file_increments()
     
     // variable initialisation
 
-    std::string file_name = "/home/kvoss/source/projects/adventofcode/2021/01/input.txt";
+    std::string file_name = "/home/kvoss/source/projects/advent_of_code_proj/adventofcode/2021/01/input.txt";
     std::string line;
     m_counter = 1;
     m_changed_numbers = 0;
@@ -79,6 +79,7 @@ int count_input_file_increments::get_count_input_file_increments()
             m_changed_numbers += 1;
         }
     }
+    list_numbers.clear();
 
     return m_changed_numbers;
 }

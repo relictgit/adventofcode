@@ -14,6 +14,7 @@ class count_input_file_increments
 
         unsigned int get_linenumbers()
         {
+            
             return m_linenumbers;
         }
         
