@@ -20,7 +20,7 @@ void calc_input_increase::set_calc_input_increase(unsigned int linenum, unsigned
 
 unsigned int calc_input_increase::get_calc_input_increase()
 {
-    std::string file_name = "/home/kvoss/source/projects/advent_of_code_proj/adventofcode/2021/01/input_task_b.txt";
+    std::string file_name = "/home/kvoss/source/projects/advent_of_code_proj/adventofcode/2021/01/input.txt";
     std::string line;
     m_linenum = 0;
     m_count = 0;
@@ -68,6 +68,9 @@ unsigned int calc_input_increase::get_calc_input_increase()
             m_changed_num += 1;
         }
     }
+
+    list_sum_num.clear();
+    list_numbers.clear();
 
     return m_changed_num;
 }
