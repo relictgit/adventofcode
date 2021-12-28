@@ -37,7 +37,6 @@ int count_input_file_increments::get_count_input_file_increments()
 
     std::string file_name = "/home/kvoss/source/projects/advent_of_code_proj/adventofcode/2021/01/input.txt";
     std::string line;
-    m_counter = 1;
     m_changed_numbers = 0;
     m_linenumbers = 0;
     // unsigned int linenumbers = 0;
@@ -72,7 +71,7 @@ int count_input_file_increments::get_count_input_file_increments()
     // while the iteration is ongoing increase a separate counter if
     // the number is higher than the previous one
 
-    for (m_counter; m_counter < list_numbers.size(); m_counter++)
+    for (m_counter = 1; m_counter < list_numbers.size(); m_counter++)
     {
         if (list_numbers.at(m_counter-1) < list_numbers.at(m_counter))
         {

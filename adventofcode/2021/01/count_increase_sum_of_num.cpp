@@ -23,7 +23,6 @@ unsigned int calc_input_increase::get_calc_input_increase()
     std::string file_name = "/home/kvoss/source/projects/advent_of_code_proj/adventofcode/2021/01/input.txt";
     std::string line;
     m_linenum = 0;
-    m_count = 0;
     m_sum_of_num = 0;
     m_changed_num = 0;
     std::vector <unsigned int> list_numbers;
@@ -54,14 +53,13 @@ unsigned int calc_input_increase::get_calc_input_increase()
     // select the first three numbers and add them together like a + b + c
     // save those numbers in a list and find the increments
 
-    for (m_count; m_count < list_numbers.size()-2; m_count++)
+    for (m_count = 0; m_count < list_numbers.size()-2; m_count++)
     {
         m_sum_of_num = list_numbers.at(m_count) + list_numbers.at(m_count+1) + list_numbers.at(m_count+2);
         list_sum_num.push_back(m_sum_of_num);
     }
 
-    m_count = 1;
-    for (m_count; m_count < list_sum_num.size(); m_count++)
+    for (m_count = 1; m_count < list_sum_num.size(); m_count++)
     {
         if (list_sum_num.at(m_count-1) < list_sum_num.at(m_count))
         {

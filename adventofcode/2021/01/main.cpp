@@ -13,30 +13,14 @@
 int main()
 {
     // Task number one
-    try
-    {
-        count_input_file_increments *logic = new count_input_file_increments();
-        int result = logic->get_count_input_file_increments();
-        std::cout << "Result of task a: " << result << std::endl;
-        delete logic;
-    }
-    catch (std::exception &ex)
-    {
-        std::cerr << "Exception: unable to create the logic object" << std::endl;
-    }
+    count_input_file_increments logic_a;
+    int result_a = logic_a.get_count_input_file_increments();
+    std::cout << "Result of task a: " << result_a << std::endl;
 
     // Task number two
-    try
-    {
-        calc_input_increase *logic_b = new calc_input_increase();
-        unsigned int result = logic_b->get_calc_input_increase();
-        std::cout << "Resut of task b: " << result << std::endl;
-        delete logic_b;
-    }
-    catch (std::exception &ex)
-    {
-        std::cerr << "Exception: unable to create the logic object" << std::endl;
-    }
+    calc_input_increase logic_b;
+    unsigned int result_b = logic_b.get_calc_input_increase();
+    std::cout << "Resut of task b: " << result_b << std::endl;
 
     return EXIT_SUCCESS;
 }
