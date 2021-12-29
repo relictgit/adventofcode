@@ -1,5 +1,5 @@
 target		:=	bin
-objs		:=	count_increasing_number.o count_increase_sum_of_num.o main.o
+objs		:=	main.o count_increasing_number.o count_increase_sum_of_num.o read_input.o
 
 CXX			:=	g++
 CXXFLAGS	:= -Wall -Werror

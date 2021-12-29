@@ -12,21 +12,11 @@ class count_input_file_increments
         void set_count_input_file_increments(unsigned int linenumbers = 0, unsigned int counter = 0, unsigned int changed_numbers = 0);
         int get_count_input_file_increments();
 
-        unsigned int get_linenumbers()
-        {
-            
-            return m_linenumbers;
-        }
+        unsigned int get_linenumbers() { return m_linenumbers; }
         
-        unsigned int get_counter()
-        {
-            return m_counter;
-        }
+        unsigned int get_counter() { return m_counter; }
         
-        unsigned int get_changed_numbers()
-        {
-            return m_changed_numbers;
-        }
+        unsigned int get_changed_numbers() { return m_changed_numbers; }
 };
 
 #endif

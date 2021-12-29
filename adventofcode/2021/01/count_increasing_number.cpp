@@ -4,6 +4,7 @@
 #include <string>
 
 #include "count_increasing_number.h"
+#include "read_input.h"
 
 // count_input_file_increments constructor
 count_input_file_increments::count_input_file_increments(unsigned int linenumbers, unsigned int counter, unsigned int changed_numbers)
@@ -35,36 +36,13 @@ int count_input_file_increments::get_count_input_file_increments()
     
     // variable initialisation
 
-    std::string file_name = "/home/kvoss/source/projects/advent_of_code_proj/adventofcode/2021/01/input.txt";
-    std::string line;
+    
     m_changed_numbers = 0;
     m_linenumbers = 0;
-    // unsigned int linenumbers = 0;
-    // unsigned int counter = 1;
-    // unsigned int changed_number = 0;
-    std::vector <unsigned int> list_numbers;
-
-    std::ifstream input_file(file_name);
-
-    // get contents of a file
-    // read the file line by line and save the line input into string
-    // then take the string, cast it into int and save it into a vector
-    // iterate until the entire contens of the file is read and save all
-    // the data into the vector (dynamic array)
-
-    try
-    {
-        while (getline(input_file, line))
-        {
-            m_linenumbers = std::stoi(line);
-            list_numbers.push_back(m_linenumbers);
-        }
-    }
-    catch (std::exception &ex)
-    {
-        std::cerr << "Exception: unable to read the lines of the file: "
-            << file_name << std::endl;
-    }
+    reader rd;      // this is a extra object with a function which reads
+                    // the input_file and returns a list of the
+                    // type unsigned int
+    std::vector <unsigned int> list_numbers = rd.file_reader();
 
     // count_input_file_increments
     // Here you ignore the first number of your dynamic array

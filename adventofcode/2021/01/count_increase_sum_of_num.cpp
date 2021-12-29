@@ -4,6 +4,7 @@
 #include <string>
 
 #include "count_increase_sum_of_num.h"
+#include "read_input.h"
 
 calc_input_increase::calc_input_increase(unsigned int linenum, unsigned int count, unsigned int sum_of_num, unsigned int changed_num)
 {
@@ -20,35 +21,14 @@ void calc_input_increase::set_calc_input_increase(unsigned int linenum, unsigned
 
 unsigned int calc_input_increase::get_calc_input_increase()
 {
-    std::string file_name = "/home/kvoss/source/projects/advent_of_code_proj/adventofcode/2021/01/input.txt";
-    std::string line;
     m_linenum = 0;
     m_sum_of_num = 0;
     m_changed_num = 0;
-    std::vector <unsigned int> list_numbers;
+    reader rd;          // this is a extra object with a function which reads 
+                        // the input_file and returns a list of the
+                        // type unsigned int
+    std::vector <unsigned int> list_numbers = rd.file_reader();
     std::vector <unsigned int> list_sum_num;
-
-    std::ifstream input_file(file_name);
-
-    // get contents of a file
-    // read the file line by line and save the line input into string
-    // then take the string, cast it into int and save it into a vector
-    // iterate until the entire contens of the file is read and save all
-    // the data into the vector (dynamic array)
-
-    try
-    {
-        while (getline(input_file, line))
-        {
-            m_linenum = std::stoi(line);
-            list_numbers.push_back(m_linenum);
-        }
-    }
-    catch (std::exception &ex)
-    {
-        std::cerr << "Exception: unable to read the lines of the file: "
-            << file_name << std::endl;
-    }
 
     // select the first three numbers and add them together like a + b + c
     // save those numbers in a list and find the increments
