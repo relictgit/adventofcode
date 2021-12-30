@@ -6,12 +6,18 @@
 #include "count_increase_sum_of_num.h"
 #include "read_input.h"
 
-calc_input_increase::calc_input_increase(unsigned int linenum, unsigned int count, unsigned int sum_of_num, unsigned int changed_num)
+calc_input_increase::calc_input_increase(unsigned int linenum,
+        unsigned int count,
+        unsigned int sum_of_num,
+        unsigned int changed_num)
 {
     set_calc_input_increase(linenum, count, sum_of_num, changed_num);
 }
 
-void calc_input_increase::set_calc_input_increase(unsigned int linenum, unsigned int count, unsigned int sum_of_num, unsigned int changed_num)
+void calc_input_increase::set_calc_input_increase(unsigned int linenum,
+        unsigned int count,
+        unsigned int sum_of_num,
+        unsigned int changed_num)
 {
     m_linenum = linenum;
     m_count = count;
@@ -35,7 +41,9 @@ unsigned int calc_input_increase::get_calc_input_increase()
 
     for (m_count = 0; m_count < list_numbers.size()-2; m_count++)
     {
-        m_sum_of_num = list_numbers.at(m_count) + list_numbers.at(m_count+1) + list_numbers.at(m_count+2);
+        m_sum_of_num = list_numbers.at(m_count)
+            + list_numbers.at(m_count+1)
+            + list_numbers.at(m_count+2);
         list_sum_num.push_back(m_sum_of_num);
     }
 

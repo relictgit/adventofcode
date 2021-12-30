@@ -9,8 +9,14 @@ class calc_input_increase
         unsigned int m_sum_of_num;
         unsigned int m_changed_num;
     public:
-        calc_input_increase(unsigned int linenum = 0, unsigned int count = 0, unsigned int sum_of_num = 0, unsigned int changed_num = 0);
-        void set_calc_input_increase(unsigned int linenum = 0, unsigned int count = 0, unsigned int sum_of_num = 0, unsigned int changed_num = 0);
+        calc_input_increase(unsigned int linenum = 0,
+                unsigned int count = 0,
+                unsigned int sum_of_num = 0,
+                unsigned int changed_num = 0);
+        void set_calc_input_increase(unsigned int linenum = 0,
+                unsigned int count = 0,
+                unsigned int sum_of_num = 0,
+                unsigned int changed_num = 0);
         unsigned int get_calc_input_increase();
 
         unsigned int get_linenum()

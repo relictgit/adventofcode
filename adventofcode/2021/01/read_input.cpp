@@ -5,14 +5,20 @@
 
 #include "read_input.h"
 
-reader::reader(std::vector <unsigned int> list_numbers, std::string file_name, std::string line, unsigned int linenumbers)
+reader::reader(std::vector <unsigned int> list_numbers,
+        std::string file_name,
+        std::string line,
+        unsigned int linenumbers)
 {
     set_reader(list_numbers, file_name, line, linenumbers);
 }
 
 reader::~reader() {}
 
-void reader::set_reader(std::vector <unsigned int> list_numbers, std::string file_name, std::string line, unsigned int linenumbers)
+void reader::set_reader(std::vector <unsigned int> list_numbers,
+        std::string file_name,
+        std::string line,
+        unsigned int linenumbers)
 {
     m_list_numbers = list_numbers;
     m_line = line;

@@ -12,8 +12,14 @@ class reader
         std::string m_file_name;
         std::string m_line;
     public:
-        reader(std::vector <unsigned int> list_numbers = {0}, std::string file_name = "", std::string line = "", unsigned int linenumbers = 0);
-        void set_reader(std::vector <unsigned int> list_numbers = {0}, std::string file_name = "", std::string line = "", unsigned int linenumbers = 0);
+        reader(std::vector <unsigned int> list_numbers = {0},
+                std::string file_name = "",
+                std::string line = "",
+                unsigned int linenumbers = 0);
+        void set_reader(std::vector <unsigned int> list_numbers = {0},
+                std::string file_name = "",
+                std::string line = "",
+                unsigned int linenumbers = 0);
         ~reader();
         std::vector <unsigned int> file_reader();
 

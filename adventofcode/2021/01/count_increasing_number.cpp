@@ -7,13 +7,17 @@
 #include "read_input.h"
 
 // count_input_file_increments constructor
-count_input_file_increments::count_input_file_increments(unsigned int linenumbers, unsigned int counter, unsigned int changed_numbers)
+count_input_file_increments::count_input_file_increments(unsigned int linenumbers,
+        unsigned int counter,
+        unsigned int changed_numbers)
 {
     set_count_input_file_increments(linenumbers, counter, changed_numbers);
 }
 
 // count_input_file_increments member function
-void count_input_file_increments::set_count_input_file_increments(unsigned int linenumbers, unsigned int counter, unsigned int changed_numbers)
+void count_input_file_increments::set_count_input_file_increments(unsigned int linenumbers,
+        unsigned int counter,
+        unsigned int changed_numbers)
 {
     m_counter = counter;
     m_linenumbers = linenumbers;
