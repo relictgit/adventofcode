@@ -2,7 +2,9 @@ target		:=	bin
 objs		:=	main.o count_increasing_number.o count_increase_sum_of_num.o read_input.o
 
 CXX			:=	g++
-CXXFLAGS	:= -Wall -Werror
+CXXFLAGS	:=	-Wall -Werror
+gdb			:=	-g
+opt			:=	-O2
 
 all: $(target)
 
@@ -14,7 +16,7 @@ bin: $(objs)
 	$(CXX) $(CXXFLAGS) $^ -o $@
 
 %.o: %.cpp
-	$(CXX) $(CXXFLAGS) -c $< $(DEPFLAGS)
+	$(CXX) $(CXXFLAGS) $(opt) -c $< $(DEPFLAGS)
 
 clean:
 	rm -f $(target) $(objs) $(deps)

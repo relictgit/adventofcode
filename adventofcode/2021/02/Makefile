@@ -2,7 +2,9 @@ target		:=	bin
 objs		:=	main.o read_input.o calc_position.o
 
 CXX			:=	g++
-CXXFLAGS	:= -Wall -Werror
+CXXFLAGS	:=	-Wall -Werror
+gdb			:=	-g
+opt			:=	-O2
 
 all: $(target)
 
