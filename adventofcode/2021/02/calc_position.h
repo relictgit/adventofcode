@@ -41,17 +41,6 @@ class position
                 int str_split_pos = 0,
                 int number_substr = 0);
         int get_position();
-
-        std::string get_fward() { return m_fward; }
-        std::string get_up() { return m_up; }
-        std::string get_down() { return m_down; }
-        std::string get_list_input_substr() { return m_list_input_substr; }
-        int get_result() { return m_result; }
-        int get_pos() { return m_pos; }
-        int get_depth() { return m_depth; }
-        int get_horizontal_pos() { return m_horizontal_pos; }
-        int get_str_split_pos() { return m_str_split_pos; }
-        int get_number_substr() { return m_number_substr; }
 };
 
 #endif // CALC_POSITION_H

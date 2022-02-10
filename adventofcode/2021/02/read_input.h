@@ -22,10 +22,6 @@ class reader
                 int linenumbers = 0);
         ~reader();
         std::vector <std::string> file_reader();
-
-        std::vector <std::string> get_list_numbers() { return m_list_numbers; }
-        std::string get_line() { return m_line; }
-        std::string get_file_name() { return m_file_name; }
 };
 
 #endif // READ_INPUT_H

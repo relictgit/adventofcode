@@ -18,23 +18,6 @@ class calc_input_increase
                 unsigned int sum_of_num = 0,
                 unsigned int changed_num = 0);
         unsigned int get_calc_input_increase();
-
-        unsigned int get_linenum()
-        {
-            return m_linenum;
-        }
-        unsigned int get_count()
-        {
-            return m_count;
-        }
-        unsigned int get_sum_of_num()
-        {
-            return m_sum_of_num;
-        }
-        unsigned int get_changed_num()
-        {
-            return m_changed_num;
-        }
 };
 
 #endif
