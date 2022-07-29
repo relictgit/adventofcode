@@ -3,8 +3,8 @@
 #include <vector>
 #include <string>
 
-#include "count_increasing_number.h"
-#include "read_input.h"
+#include "count_increasing_number.hpp"
+#include "read_input.hpp"
 
 // count_input_file_increments constructor
 count_input_file_increments::count_input_file_increments(unsigned int linenumbers,

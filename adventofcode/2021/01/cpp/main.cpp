@@ -7,8 +7,8 @@
 #include <exception>
 #include <iostream>
 
-#include "count_increasing_number.h"
-#include "count_increase_sum_of_num.h"
+#include "count_increasing_number.hpp"
+#include "count_increase_sum_of_num.hpp"
 
 int main()
 {

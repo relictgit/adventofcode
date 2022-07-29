@@ -3,8 +3,8 @@
 #include <vector>
 #include <string>
 
-#include "count_increase_sum_of_num.h"
-#include "read_input.h"
+#include "count_increase_sum_of_num.hpp"
+#include "read_input.hpp"
 
 calc_input_increase::calc_input_increase(unsigned int linenum,
         unsigned int count,
