@@ -3,7 +3,7 @@
 #include <vector>
 #include <string>
 
-#include "read_input.h"
+#include "read_input.hpp"
 
 reader::reader(std::vector <std::string> list_numbers,
         std::string file_name,

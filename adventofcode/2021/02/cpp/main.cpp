@@ -13,7 +13,7 @@
  * down x       =>  
  * up x         =>  */
 #include <iostream>
-#include "calc_position.h"
+#include "calc_position.hpp"
 
 
 int main()

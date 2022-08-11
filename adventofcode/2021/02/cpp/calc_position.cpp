@@ -3,8 +3,8 @@
 #include <vector>
 #include <sstream>
 
-#include "calc_position.h"
-#include "read_input.h"
+#include "calc_position.hpp"
+#include "read_input.hpp"
 
 position::~position() {}
 
